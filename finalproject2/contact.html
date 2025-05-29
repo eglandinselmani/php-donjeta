@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Illyrian Bloodline</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/ibl_logo_600x600_crop_center.png" alt="Illyrian Bloodline Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>For inquiries, collaborations, or feedback, reach out to us:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:info@illyrianbloodline.com">info@illyrianbloodline.com</a></li>
+        <li><strong>Phone:</strong> +355 69 440 4188</li>
+        <li><strong>Address:</strong> Qendra Tregtare Albi Mall, Kati i Pare, Prishtinë, Kosovo</li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Illyrian Bloodline</p>
+    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
